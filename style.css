@@ -604,15 +604,42 @@ p {
   position: relative;
   overflow: hidden;
   padding: var(--sp-16) 0 var(--sp-10);
+  /* Establish an isolated stacking context so z-index children are contained */
+  isolation: isolate;
 }
 
 /* Animated background orbs */
 .hero-bg {
   position: absolute;
   inset: 0;
-  z-index: var(--z-behind);
+  /* Raised from -1 to 2 so orbs sit above the overlay but below content */
+  z-index: 2;
   pointer-events: none;
   overflow: hidden;
+}
+
+/* Background video — direct child of .hero-section, z-index: 0 (above section bg) */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.20;
+  z-index: 0;
+  pointer-events: none;
+  display: block;
+  max-width: none; /* override global video { max-width: 100% } reset */
+}
+
+/* Dark overlay — sits above video (z:1), below orbs (z:2) and content */
+.hero-video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 10, 20, 0.75);
+  z-index: 1;
+  pointer-events: none;
 }
 .hero-orb {
   position: absolute;
@@ -646,6 +673,8 @@ p {
   display: flex;
   align-items: center;
   width: 100%;
+  position: relative;
+  z-index: 10; /* above video(0), overlay(1), orbs(2) */
 }
 
 .hero-grid {
@@ -658,7 +687,7 @@ p {
 
 .hero-content {
   position: relative;
-  z-index: var(--z-base);
+  z-index: 10;
 }
 
 /* .hero-title {
@@ -792,6 +821,7 @@ p {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
+  z-index: 10;
 }
 .scroll-line {
   width: 1px;

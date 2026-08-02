@@ -23,6 +23,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="hacker.png">
+<link rel="shortcut icon" href="hacker.png">
+<link rel="apple-touch-icon" href="hacker.png">
 </head>
 <audio id="bgMusic" src="portfolio.mp3"></audio>
 <body class="loading-active">
@@ -83,6 +86,13 @@
   <main>
     <!-- ===================== HERO SECTION ===================== -->
     <section id="hero" class="hero-section">
+      <!-- Background Video (direct child of hero-section, NOT inside hero-bg) -->
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+        <source src="bg video.mp4" type="video/mp4">
+      </video>
+      <!-- Dark overlay sits above video, below content -->
+      <div class="hero-video-overlay"></div>
+
       <div class="hero-bg">
         <div class="hero-orb hero-orb--1"></div>
         <div class="hero-orb hero-orb--2"></div>
