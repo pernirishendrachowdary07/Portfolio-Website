@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio of Rishendra — Python Full Stack Developer crafting intelligent models and high-performance web applications.">
+  <meta name="author" content="Rishendra">
+  <meta name="theme-color" content="#0B1120">
+  <title>Rishendra — Portfolio</title>
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rishendra — Python Full Stack Developer">
+  <meta property="og:description" content="Personal portfolio of Rishendra — Python Full Stack Developer crafting intelligent models and high-performance web applications.">
+  <meta property="og:image" content="assets/images/profile.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rishendra — Portfolio">
+  <meta name="twitter:description" content="Python Full Stack Developer crafting intelligent models and high-performance web applications.">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<audio id="bgMusic" src="portfolio.mp3"></audio>
+<body class="loading-active">
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <body>
+
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <img src="my logo final.png"
+             alt="RC Logo"
+             class="loader-logo">
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        ...
+    </header>
+
+    <!-- Hero -->
+    ...
+
+  <!-- ===================== SCROLL PROGRESS BAR ===================== -->
+  <div class="scroll-progress-container" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- ===================== CURSOR GLOW EFFECT ===================== -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ===================== BACKGROUND PARTICLES ===================== -->
+  <div class="particles-container" id="particlesContainer" aria-hidden="true"></div>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header id="navbar" class="navbar">
+    <nav class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Home">
+    <img src="my logo final.png" alt="RC Logo" class="logo-img">
+</a>
+
+      <ul class="nav-links" id="navLinks" role="navigation">
+        <li><a href="#hero" class="nav-link" data-section="hero">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </nav>
+  </header>
+
+
+  <main>
+    <!-- ===================== HERO SECTION ===================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg">
+        <div class="hero-orb hero-orb--1"></div>
+        <div class="hero-orb hero-orb--2"></div>
+        <div class="hero-orb hero-orb--3"></div>
+      </div>
+
+      <div class="hero-container container">
+        <div class="hero-grid">
+          <div class="hero-content reveal">
+            <h2 class="hero-greeting">Hi, I'm</h2>
+<h1 class="hero-title">
+    <span class="highlight">Rishendra Chowdary</span>
+</h1>
+<!-- <p class="hero-role">P & Full Stack Developer</p> -->
+            <p class="hero-role">
+              <span class="typed-text" id="typedText"></span>
+              <span class="typed-cursor" id="typedCursor">|</span>
+            </p>
+            <p class="hero-description">
+              I specialize in building intelligent AI models and engineering robust full-stack applications. Crafting seamless, end-to-end digital solutions that scale.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn--primary">View Projects</a>
+              <a href="resume.pdf" class="btn btn--secondary" download>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon">
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="7 10 12 15 17 10"></polyline>
+                  <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download Resume
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal" data-delay="1">
+            <div class="profile-glow"></div>
+            <div class="profile-image-container">
+              <img src="profile.jpg" alt="Rishendra Chowdary" class="profile-img">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Profile Image in Premium Frame -->
+          <div class="about-visual reveal">
+            <div class="about-image-glow"></div>
+            <div class="about-image-frame">
+              <img src="profile.jpg" alt="Rishendra Chowdary" class="about-img">
+            </div>
+          </div>
+
+          <!-- Right: About text and info cards -->
+          <div class="about-content">
+            <div class="about-text reveal">
+              <p>
+                Hello! I'm Rishendra Chowdary, a Computer Science undergraduate and aspiring Python Full Stack Developer. I enjoy building modern web applications that combine clean design with efficient functionality.
+              </p>
+              <p>
+                I have developed several academic and personal projects that strengthened my understanding of frontend and backend development. I believe in writing clean, maintainable code and continuously learning new technologies to stay current with industry trends.As a fresher, I'm eager to learn, adapt, and contribute to innovative development teams while continuously enhancing my technical and problem-solving skills.
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- ===================== EDUCATION SECTION ===================== -->
+    <section id="education" class="education section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Education</h2>
+          <p class="section-description">
+            My academic journey and the foundation of my technical skills.
+          </p>
+        </div>
+
+        <div class="education-container">
+          <!-- B.Tech -->
+          <div class="education-card">
+            <div class="education-icon">🎓</div>
+            <div class="education-content">
+              <span class="education-year">2023 - 2027</span>
+              <h3>B.Tech</h3>
+              <h4>Computer Science and Engineering</h4>
+              <p>
+                QIS College of Engineering & Technology,
+                Ongole, Andhra Pradesh.
+              </p>
+              <span class="education-grade">CGPA: 8.2</span>
+            </div>
+          </div>
+
+          <!-- Intermediate -->
+          <div class="education-card">
+            <div class="education-icon">📘</div>
+            <div class="education-content">
+              <span class="education-year">2021 - 2023</span>
+              <h3>Intermediate (MPC)</h3>
+              <h4>Board of Intermediate Education, Andhra Pradesh</h4>
+              <p>
+                Sri Chaitanya Junior College,
+                Guntur.
+              </p>
+              <span class="education-grade">Percentage: 83%</span>
+            </div>
+          </div>
+
+          <!-- SSC -->
+          <div class="education-card">
+            <div class="education-icon">🏫</div>
+            <div class="education-content">
+              <span class="education-year">2021</span>
+              <h3>Secondary School Certificate (SSC)</h3>
+              <h4>Board of Secondary Education, Andhra Pradesh</h4>
+              <p>
+                ZPHS,
+                Punuru.
+              </p>
+              <span class="education-grade">GPA: 9.7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== SKILLS SECTION ===================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Skills & Tools</h2>
+        </div>
+
+        <div class="skills-categories-grid">
+          <!-- Category 1: Programming Languages -->
+          <div class="skills-category reveal">
+            <h3 class="category-title">Programming Languages</h3>
+            <div class="skills-item-grid">
+              <div class="skill-item-card reveal-card" data-delay="0">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16.5 9.4 7.55 4.24a1.79 1.79 0 0 0-2.5 1.51v12.5a1.79 1.79 0 0 0 2.5 1.5l8.95-5.15a1.79 1.79 0 0 0 0-3.1Z"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">Python</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="1">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">JavaScript</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="2">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 12H9v-2h6v2zm3-4H6V8h12v4z"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">TypeScript</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="3">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m5 12 5 5L20 7"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">Go</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Frontend -->
+          <div class="skills-category reveal">
+            <h3 class="category-title">Frontend</h3>
+            <div class="skills-item-grid">
+              <div class="skill-item-card reveal-card" data-delay="0">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    <path d="M2 12h20"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">React</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="1">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                  </svg>
+                </div>
+                <span class="skill-item-name">Next.js</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="2">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">Tailwind CSS</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="3">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">HTML5 / CSS3</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Backend -->
+          <div class="skills-category reveal">
+            <h3 class="category-title">Backend</h3>
+            <div class="skills-item-grid">
+              <div class="skill-item-card reveal-card" data-delay="0">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">FastAPI</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="1">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                    <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                    <line x1="6" y1="6" x2="6.01" y2="6"></line>
+                    <line x1="6" y1="18" x2="6.01" y2="18"></line>
+                  </svg>
+                </div>
+                <span class="skill-item-name">Node.js</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="2">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">REST APIs</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="3">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 22 22 22"></polygon>
+                  </svg>
+                </div>
+                <span class="skill-item-name">GraphQL</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 4: Database -->
+          <div class="skills-category reveal">
+            <h3 class="category-title">Database</h3>
+            <div class="skills-item-grid">
+              <div class="skill-item-card reveal-card" data-delay="0">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">PostgreSQL</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="1">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <line x1="16" y1="13" x2="8" y2="13"></line>
+                    <line x1="16" y1="17" x2="8" y2="17"></line>
+                    <polyline points="10 9 9 9 8 9"></polyline>
+                  </svg>
+                </div>
+                <span class="skill-item-name">MongoDB</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="2">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
+                    <path d="M19 10v2a7 7 0 0 1-14 0v-2M12 19v4M8 23h8"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">Qdrant (Vector DB)</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="3">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 12A10 10 0 1 1 12 2v10Z"></path>
+                    <path d="M12 2a10 10 0 0 1 10 10H12V2Z"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">Redis</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 5: AI & Machine Learning -->
+          <div class="skills-category reveal">
+            <h3 class="category-title">AI & Machine Learning</h3>
+            <div class="skills-item-grid">
+              <div class="skill-item-card reveal-card" data-delay="0">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2v20M2 12h20M12 2a10 10 0 0 1 10 10M12 2a10 10 0 0 0-10 10M2 12a10 10 0 0 0 10 10M22 12a10 10 0 0 0-10 10"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">PyTorch</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="1">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 1.5 2 2.5 3.5 3 2.5 1 4.5 3.5 4.5 6a7.5 7.5 0 0 1-15 0c0-1.15.2-2.3.6-3.36 1.8 1.08 2.9 2.86 2.9 4.86z"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">Hugging Face</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="2">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5h20c0-2.31-1-4.24-2.5-5.5"></path>
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 10h-2V7h2v5zm0 4h-2v-2h2v2z"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">OpenAI API</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="3">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">LangChain</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 6: Tools -->
+          <div class="skills-category reveal">
+            <h3 class="category-title">Tools</h3>
+            <div class="skills-item-grid">
+              <div class="skill-item-card reveal-card" data-delay="0">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">Git & GitHub</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="1">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="2" y1="10" x2="22" y2="10"></line>
+                    <line x1="12" y1="3" x2="12" y2="17"></line>
+                  </svg>
+                </div>
+                <span class="skill-item-name">Docker</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="2">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <span class="skill-item-name">AWS</span>
+              </div>
+              <div class="skill-item-card reveal-card" data-delay="3">
+                <div class="skill-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5"></polygon>
+                  </svg>
+                </div>
+                <span class="skill-item-name">Vercel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS SECTION ===================== -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">A selection of projects I've built — from data analysis tools to full-stack applications.</p>
+        </div>
+
+        <div class="projects-filter reveal">
+          <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+          <button class="filter-btn" data-filter="java" id="filter-java">Java</button>
+          <button class="filter-btn" data-filter="web" id="filter-web">Web Apps</button>
+          <button class="filter-btn" data-filter="stats" id="filter-stats">Data &amp; Stats</button>
+        </div>
+
+        <div class="projects-grid" id="projectsGrid">
+
+          <!-- Card 1: Statistical Data Analyzer -->
+          <article class="project-card reveal" data-category="stats java" data-delay="0" id="proj-stat-analyzer">
+            <div class="project-image">
+              <img src="project_synthetix.jpg" alt="Statistical Data &amp; ANOVA Analyzer" class="project-img" loading="lazy">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Statistical Data Analyzer</h3>
+              <p class="project-desc">An analytical toolkit for computing ANOVA, linear regression, and classification metrics. Provides structured mathematical summaries and automated data validation.</p>
+              <div class="project-tags">
+                <span class="tag tag--ai">Java</span>
+                <span class="tag tag--ai">Statistics</span>
+                <span class="tag">ANOVA</span>
+                <span class="tag">Data Mining</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="project-btn project-btn--primary" id="stat-analyzer-demo" aria-label="View Statistical Analyzer live demo">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+                <a href="#" class="project-btn project-btn--ghost" id="stat-analyzer-github" aria-label="View Statistical Analyzer on GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2: Java Collections & DS Sandbox -->
+          <article class="project-card reveal" data-category="java" data-delay="1" id="proj-java-ds">
+            <div class="project-image">
+              <img src="project_aether.jpg" alt="Java Data Structures Engine" class="project-img" loading="lazy">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Java Collections Visualizer</h3>
+              <p class="project-desc">An interactive learning engine demonstrating memory allocation, operations, and performance comparisons between dynamic Arrays, ArrayLists, and custom structures.</p>
+              <div class="project-tags">
+                <span class="tag tag--ai">Java</span>
+                <span class="tag tag--ai">OOP</span>
+                <span class="tag">Data Structures</span>
+                <span class="tag">Algorithms</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="project-btn project-btn--primary" id="java-ds-demo" aria-label="View Java DS Engine live demo">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+                <a href="#" class="project-btn project-btn--ghost" id="java-ds-github" aria-label="View Java DS Engine on GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3: Academic Portal Web App -->
+          <article class="project-card reveal" data-category="web" data-delay="2" id="proj-academic-portal">
+            <div class="project-image">
+              <img src="project_aura.jpg" alt="Academic Request &amp; Document Manager" class="project-img" loading="lazy">
+            </div>
+            <div class="project-info">
+              <h3 class="project-title">Academic Document Portal</h3>
+              <p class="project-desc">A Web application designed for student request workflows, automated administrative letter formatting, and record updates for computer science departments.</p>
+              <div class="project-tags">
+                <span class="tag">HTML/CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Web Forms</span>
+                <span class="tag">UI Design</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="project-btn project-btn--primary" id="portal-demo" aria-label="View Academic Portal live demo">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  Live Demo
+                </a>
+                <a href="#" class="project-btn project-btn--ghost" id="portal-github" aria-label="View Academic Portal on GitHub">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /projects-grid -->
+
+        <div class="projects-cta reveal">
+          <p>Want to see more code?</p>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn--secondary" id="view-all-github">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            View All on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2 class="section-title">Get in Touch</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="contact-text">
+              I'm currently open to new opportunities and collaborations.
+              Whether you have a question, a project idea, or just want to say
+              hello — I'd love to hear from you.
+            </p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon-wrapper">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="contact-item-info">
+                  <span class="contact-label">Email</span>
+                  <a href="mailto:hello@rishendra.dev" class="contact-link-value">pernirishendra@gmail.com</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon-wrapper">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-item-info">
+                  <span class="contact-label">Phone</span>
+                  <a href="tel:+14155550198" class="contact-link-value">+91 8464078908</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon-wrapper">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="contact-item-info">
+                  <span class="contact-label">GitHub</span>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-link-value">github.com/rishendra</a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon-wrapper">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="contact-item-info">
+                  <span class="contact-label">LinkedIn</span>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-link-value">https://www.linkedin.com/in/rishendra-chowdary-perni-475113376</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-group">
+              <input type="text" id="formName" name="name" class="form-input" placeholder=" " required autocomplete="name">
+              <label for="formName" class="form-label">Your Name</label>
+              <div class="form-error" id="nameError"></div>
+            </div>
+
+            <div class="form-group">
+              <input type="email" id="formEmail" name="email" class="form-input" placeholder=" " required autocomplete="email">
+              <label for="formEmail" class="form-label">Your Email</label>
+              <div class="form-error" id="emailError"></div>
+            </div>
+
+            <div class="form-group">
+              <textarea id="formMessage" name="message" class="form-input form-textarea" placeholder=" " required rows="5"></textarea>
+              <label for="formMessage" class="form-label">Your Message</label>
+              <div class="form-error" id="messageError"></div>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loader" aria-hidden="true"></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="footer-logo" aria-label="Home">
+            <span class="logo-text">RC<span class="logo-dot"></span></span>
+          </a>
+          <p class="footer-bio">Building intelligent systems and high-performance user experiences with clean code and premium design.</p>
+        </div>
+        
+        <div class="footer-nav">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-nav-links">
+            <li><a href="#about" class="footer-nav-link">About</a></li>
+            <li><a href="#skills" class="footer-nav-link">Skills</a></li>
+            <li><a href="#projects" class="footer-nav-link">Projects</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-socials">
+          <h4 class="footer-title">Connect</h4>
+          <div class="footer-social-icons">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="footer-copyright">&copy; 2026 Rishendra. All rights reserved.</p>
+        <p class="footer-credits">Designed & Engineered with care</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ===================== BACK TO TOP ===================== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+
+  <!-- ===================== TOAST NOTIFICATION ===================== -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <div class="toast-content">
+      <svg class="toast-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+      </svg>
+      <span class="toast-message" id="toastMessage">Message sent successfully!</span>
+    </div>
+  </div>
+
+  <!-- ===================== BACKGROUND MUSIC ===================== -->
+  <audio id="bgMusic" src="assets/portfolio.mp3" preload="auto" loop></audio>
+
+  <!-- ===================== MUSIC HINT ===================== -->
+  <div id="musicHint" class="music-hint" aria-live="polite">
+    <div class="music-hint-content">
+      <span class="music-hint-icon">🎵</span>
+      <div class="music-hint-text">
+        <div><strong>M</strong> to Play</div>
+        <div><strong>S</strong> to Stop</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
