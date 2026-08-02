@@ -127,9 +127,18 @@
   const initMobileMenu = () => {
     const toggle = $('#navToggle');
     const menu = $('#navLinks');
+    const navbar = $('#navbar');
     if (!toggle || !menu) return;
 
+    // Sync mobile menu top edge with actual navbar bottom edge
+    const syncMenuTop = () => {
+      if (navbar) {
+        menu.style.top = navbar.getBoundingClientRect().height + 'px';
+      }
+    };
+
     const open = () => {
+      syncMenuTop();
       toggle.classList.add('open');
       toggle.setAttribute('aria-expanded', 'true');
       menu.classList.add('active');
@@ -156,6 +165,11 @@
           !toggle.contains(e.target)) {
         close();
       }
+    });
+
+    // Keep menu top in sync if window is resized
+    window.addEventListener('resize', () => {
+      if (menu.classList.contains('active')) syncMenuTop();
     });
   };
 
